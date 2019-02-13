@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('img4.jpeg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+table , th, td{
+  border: 1px solid black;
+   width: 100%;
+   table-layout: fixed
+
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  
+  <table>
+<tr> 
+<td>  <div class="middle">
+    <h1>STRATEGY IND. ASS.</h1>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+  </div></td>
+  
+  
+<td> <div class="">
+    <h1>STRATEGY SYN. ASS.</h1>
+    <hr>
+    <p id="demo2" style="font-size:30px"></p>
+  </div> </td>
+
+<td> <div class="">
+    <h1>STRATEGY EXAM</h1>
+    <hr>
+    <p id="demo5" style="font-size:30px"></p>
+  </div> </td>
+</tr>
+</table>
+
+<table>
+<tr>
+
+  <td> <div class="">
+    <h1>CRITICAL BUS. SKILLS CLASS TEST</h1>
+    <hr>
+    <p id="demo3" style="font-size:30px"></p>
+  </div> </td>
+   <td> <div class="">
+    <h1>CRITICAL BUS. SKILLS SYN. ASS.</h1>
+    <hr>
+    <p id="demo4" style="font-size:30px"></p>
+  </div> </td>
+   <td> <div class="">
+    <h1>CRITICAL BUS. SKILLS EXAM</h1>
+    <hr>
+    <p id="demo6" style="font-size:30px"></p>
+  </div> </td>
+</tr>
+</table>   
+ 
+  
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("February 25, 2019 23:00:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+<script>
+// Set the date we're counting down to
+var countDownDate2 = new Date("March 11, 2019 23:00:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction2 = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance2 = countDownDate2 - now;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance2 % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo2"
+  document.getElementById("demo2").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the count down is over, write some text 
+  if (distance2 < 0) {
+    clearInterval(countdownfunction2);
+    document.getElementById("demo2").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<script>
+// Set the date we're counting down to
+var countDownDate3 = new Date("February 27, 2019 23:00:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction3 = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance3= countDownDate3 - now;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance3 / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance3 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance3 % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo2"
+  document.getElementById("demo3").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the count down is over, write some text 
+  if (distance3 < 0) {
+    clearInterval(countdownfunction2);
+    document.getElementById("demo3").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<script>
+// Set the date we're counting down to
+var countDownDate4= new Date("March 20, 2019 23:00:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction4 = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance4= countDownDate4 - now;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance4 / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance4 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance4 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance4 % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo2"
+  document.getElementById("demo4").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the count down is over, write some text 
+  if (distance4 < 0) {
+    clearInterval(countdownfunction2);
+    document.getElementById("demo4").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<script>
+// Set the date we're counting down to
+var countDownDate5 = new Date("March 29, 2019 23:00:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction5 = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance5= countDownDate5 - now;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance5 / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance5 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance5 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance5 % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo2"
+  document.getElementById("demo5").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the count down is over, write some text 
+  if (distance5 < 0) {
+    clearInterval(countdownfunction2);
+    document.getElementById("demo5").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<script>
+// Set the date we're counting down to
+var countDownDate6 = new Date("March 27, 2019 23:00:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction6 = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance6= countDownDate6 - now;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance6 / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance6 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance6 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance6 % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo2"
+  document.getElementById("demo6").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the count down is over, write some text 
+  if (distance6< 0) {
+    clearInterval(countdownfunction2);
+    document.getElementById("demo6").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
