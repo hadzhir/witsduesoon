@@ -7,14 +7,14 @@ body, html {
 }
 
 .bgimg {
-  background-image: url("https://s3.amazonaws.com/mk-website-media/wp-content/uploads/sites/2/2018/12/14170604/Wallpaper-Kemra-ClubhouseBrick-1-1-1100x1318.jpg");
-  height: 110%;
+  background-image: url("http://wallpaperswide.com/download/mega_brain-wallpaper-1920x1080.jpg");
+  height: 120%;
   background-position: center;
   background-size: cover;
   position: relative;
-  color: #d61d4e;
+  color: white;
   font-family: "Courier New", Courier, monospace;
-  font-size: 15px;
+  font-size: 11px;
 }
 
 .topleft {
@@ -43,53 +43,58 @@ hr {
 </style>
 <body>
 
-<div class="bgimg">
+<div class="bgimg" ">
   
-  <table>
+  <table style="color: red" id="table_1">
 <tr> 
- <h1>BUSA5203A 	Technology and Operations by Prof Craig Van Rooyen</h1>
+ <h1 style="color: red">BUSA5208A Entrepreneurship by Dr McEdward Murimbika</h1>
 <td>  <div class="middle">
-    <h1>Test 1, 29 April 2019</h1>
+    <h1>Syndicate assignment, 1 November 2019, by
+12:00 (midday)
+</h1>
 	 <hr>
     <p id="demo1" style="font-size:30px"></p>
   </div></td>
   
   
-<td> <div class="">
-    <h1>Test 2, 20 May 2019 </h1>
+<td> <div class="middle">
+    <h1>Exam, 11 November 2019</h1>
     <hr>
     <p id="demo2" style="font-size:30px"></p>
   </div> </td>
-
+  
+<!--
 <td> <div class="">
     <h1>Syndicate Assignment, 03 June 2019</h1>
     <hr>
     <p id="demo3" style="font-size:30px"></p>
   </div> </td>
+  
   <td> <div class="">
     <h1>EXAM, 12 JUNE 2019</h1>
     <hr>
     <p id="demo4" style="font-size:30px"></p>
-  </div> </td>
+  </div> </td>-->
 </tr>
 </table>
 
-<table>
+<table id="table_2">
 <tr>
- <h1>BUSA5202A Economics for Business by George Tweneboah</h1>
+ <h1>BUSA5207A People Management by Mapule Mofokeng</h1>
 <td>  <div class="middle">
-    <h1>Test 1, 09 May 2019</h1>
+    <h1>Syndicate assignment, 4 November 2019, by
+12:00 (midday)</h1>
     <hr>
-    <p id="demo5" style="font-size:30px"></p>
+    <p id="demo3" style="font-size:30px"></p>
   </div></td>
   
   
 <td> <div class="">
-    <h1>Test 2, 29 May 2019</h1>
+    <h1>Exam, 15 November 2019</h1>
     <hr>
-    <p id="demo6" style="font-size:30px"></p>
+    <p id="demo4" style="font-size:30px"></p>
   </div> </td>
-
+<!--
 <td> <div class="">
     <h1>Syndicate Assignment, 22 May 2019</h1>
     <hr>
@@ -99,6 +104,28 @@ hr {
     <h1>EXAM, 14 JUNE 2019</h1>
     <hr>
     <p id="demo8" style="font-size:30px"></p>
+  </div> </td>-->
+</tr>
+</table>   
+ 
+ <!--_______________________________________________________________________________-->
+ 
+ <table style="color: red" id="table_3">
+<tr>
+ <h1 style="color: red">BUSA 5206A Marketing & Sales by Emmanuel Quaye </h1>
+<td>  <div class="middle">
+    <h1>Syndicate assignment, 1 November 2019, by
+12:00 (midday)
+</h1>
+	 <hr>
+    <p id="demo5" style="font-size:30px"></p>
+  </div></td>
+  
+  
+<td> <div class="middle">
+    <h1>Exam, 13 November 2019</h1>
+    <hr>
+    <p id="demo6" style="font-size:30px"></p>
   </div> </td>
 </tr>
 </table>   
@@ -108,7 +135,7 @@ hr {
 
 <script>
 // Set the date we're counting down to
-var countDownDate1 = new Date("April 29, 2019 23:00:00").getTime();
+var countDownDate1 = new Date("November 1, 2019 12:00:00").getTime();
 
 // Update the count down every 1 second
 var countdownfunction1 = setInterval(function() {
@@ -136,9 +163,10 @@ var countdownfunction1 = setInterval(function() {
   }
 }, 1000);
 </script>
+
 <script>
 // Set the date we're counting down to
-var countDownDate2 = new Date("May 20, 2019 23:00:00").getTime();
+var countDownDate2 = new Date("November 11, 2019 9:00:00").getTime();
 
 // Update the count down every 1 second
 var countdownfunction2 = setInterval(function() {
@@ -155,13 +183,13 @@ var countdownfunction2 = setInterval(function() {
   var minutes = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance2 % (1000 * 60)) / 1000);
   
-  // Output the result in an element with id="demo2"
+  // Output the result in an element with id="demo"
   document.getElementById("demo2").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
   
   // If the count down is over, write some text 
   if (distance2 < 0) {
-    clearInterval(countdownfunction2);
+    clearInterval(countdownfunction1);
     document.getElementById("demo2").innerHTML = "EXPIRED";
   }
 }, 1000);
@@ -169,7 +197,7 @@ var countdownfunction2 = setInterval(function() {
 
 <script>
 // Set the date we're counting down to
-var countDownDate3 = new Date("June 03, 2019 23:00:00").getTime();
+var countDownDate3 = new Date("November 04, 2019 23:00:00").getTime();
 
 // Update the count down every 1 second
 var countdownfunction3 = setInterval(function() {
@@ -186,7 +214,7 @@ var countdownfunction3 = setInterval(function() {
   var minutes = Math.floor((distance3 % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance3 % (1000 * 60)) / 1000);
   
-  // Output the result in an element with id="demo2"
+  // Output the result in an element with id="demo3"
   document.getElementById("demo3").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
   
@@ -200,7 +228,7 @@ var countdownfunction3 = setInterval(function() {
 
 <script>
 // Set the date we're counting down to
-var countDownDate4= new Date("June 12, 2019 23:00:00").getTime();
+var countDownDate4= new Date("November 15, 2019 23:00:00").getTime();
 
 // Update the count down every 1 second
 var countdownfunction4 = setInterval(function() {
@@ -217,7 +245,7 @@ var countdownfunction4 = setInterval(function() {
   var minutes = Math.floor((distance4 % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance4 % (1000 * 60)) / 1000);
   
-  // Output the result in an element with id="demo2"
+  // Output the result in an element with id="demo4"
   document.getElementById("demo4").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
   
@@ -231,7 +259,7 @@ var countdownfunction4 = setInterval(function() {
 
 <script>
 // Set the date we're counting down to
-var countDownDate5 = new Date("May 09, 2019 23:00:00").getTime();
+var countDownDate5 = new Date("November 01, 2019 12:00:00").getTime();
 
 // Update the count down every 1 second
 var countdownfunction5 = setInterval(function() {
@@ -248,7 +276,7 @@ var countdownfunction5 = setInterval(function() {
   var minutes = Math.floor((distance5 % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance5 % (1000 * 60)) / 1000);
   
-  // Output the result in an element with id="demo2"
+  // Output the result in an element with id="demo5"
   document.getElementById("demo5").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
   
@@ -262,7 +290,7 @@ var countdownfunction5 = setInterval(function() {
 
 <script>
 // Set the date we're counting down to
-var countDownDate6 = new Date("May 29, 2019 23:00:00").getTime();
+var countDownDate6 = new Date("November 13, 2019 09:00:00").getTime();
 
 // Update the count down every 1 second
 var countdownfunction6 = setInterval(function() {
@@ -279,7 +307,7 @@ var countdownfunction6 = setInterval(function() {
   var minutes = Math.floor((distance6 % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance6 % (1000 * 60)) / 1000);
   
-  // Output the result in an element with id="demo2"
+  // Output the result in an element with id="demo6"
   document.getElementById("demo6").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
   
@@ -310,7 +338,7 @@ var countdownfunction7 = setInterval(function() {
   var minutes = Math.floor((distance7 % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance7 % (1000 * 60)) / 1000);
   
-  // Output the result in an element with id="demo2"
+  // Output the result in an element with id="demo7"
   document.getElementById("demo7").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
   
